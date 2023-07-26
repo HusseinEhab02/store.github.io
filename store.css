@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+/* media */
+@media(max-width : 768px){
+    table tr,td {
+        display: grid;
+        grid-template-columns: repeat(auto-fill , minmax(1fr));
+        text-align: center;
+    }
+    table {
+        display: grid;
+        grid-template-columns: repeat(auto-fill , minmax(100px ,1fr));
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    th {
+        display: none;
+    }
+    .one::before{
+    position: absolute;
+    content: "Id";
+    left:-300%;
+    top: 20%;
+    font-size: large;
+    color:rgb(0, 141, 37) ;
+    }
+    .two::before{
+    position: absolute;
+    content: "Title";
+    left:-300%;
+    top: 20%;
+    font-size: large;
+    color:rgb(0, 141, 37) ;
+    }
+    .three::before{
+    position: absolute;
+    content: "Price";
+    left:-300%;
+    top: 20%;
+    font-size: large;
+    color:rgb(0, 141, 37) ;
+    }
+    .four::before{
+    position: absolute;
+    content: "Taxes";
+    left:-300%;
+    top: 20%;
+    font-size: large;
+    color:rgb(0, 141, 37) ;
+    }
+    .five::before{
+    position: absolute;
+    content: "Ads";
+    left:-300%;
+    top: 20%;
+    font-size: large;
+    color:rgb(0, 141, 37) ;
+    }
+    .six::before{
+    position: absolute;
+    content: "Discounts";
+    left:-300%;
+    top: 20%;
+    font-size: large;
+    color:rgb(0, 141, 37) ;
+    }
+    .seven::before{
+    position: absolute;
+    content: "Total";
+    left:-300%;
+    top: 20%;
+    font-size: large;
+    color:rgb(0, 141, 37) ;
+    }
+
+    .eight::before{
+    position: absolute;
+    content: "Category";
+    left:-300%;
+    top: 20%;
+    font-size: large;
+    color:rgb(0, 141, 37) ;
+    }
+    .nine::before{
+    position: absolute;
+    content: "Delete";
+    left:-300%;
+    top: 20%;
+    font-size: large;
+    color:rgb(0, 141, 37) ;
+    }
+    
+    td{
+        position: relative;
+    }
+    tr{
+        position: relative;
+        margin-bottom: 30px;
+    }
+}
+/* media */
+body{
+    background: #222;
+    color: #fff;
+}
+.crud{
+    width: 80%;
+    margin: auto;
+    
+}
+.head{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: #111;
+    margin: 4px 0;
+    border-radius: 4px;
+    padding:4px;
+    color: #fff;
+
+}
+input:focus{
+    background-color: #000;
+    transform: scale(1.1);
+}
+.price input{
+    width: 20%;
+
+}
+#total{
+    background-color: #7d0000;
+    padding: 5px 2px;
+    break-inside: 4px;
+}
+#total::before{
+    content: "Total";
+}
+button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: rgb(59, 1, 146);
+    transition: 0.3s all linear;
+}
+
+button:hover{
+    background-color: rgb(105, 0, 234);
+    letter-spacing: 2px;
+}
+.btnsearch{
+    display: flex;
+    justify-content: space-between
+}
+.btnsearch button{
+    width: 45%;
+    /* use it more */
+}
+table{
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+}
+table th{
+    text-transform: uppercase;
+    
+}
+th , td{
+    padding: 5px;
+}
+
+.deleteall{
+    margin: 20px 0;
+}
+.one , .two , .three , .four , .five , .six , .seven  , .eight , .nine{
+    position: relative;
+}
+tr{
+    position: relative;
+}
+
+
+
+
+
+
